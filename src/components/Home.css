@@ -1,0 +1,835 @@
+/* :root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid var(--border);
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+} */
+    /* font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tDMPKzSQ.woff2) format('woff2');
+    unicode-range: U +0900 -097F, U +1CD0 -1CF9, U +200C -200D, U +20A8, U +20B9, U +20F0, U +25CC, U + A830-A839, U + A8E0-A8FF, U +11B00 -11B09;
+} */
+/* poppins-latin-400-normal */
+ /* @font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 200;
+    src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tDMPKzSQ.woff2) format('woff2');
+    unicode-range: U +0900 -097F, U +1CD0 -1CF9, U +200C -200D, U +20A8, U +20B9, U +20F0, U +25CC, U + A830-A839, U + A8E0-A8FF, U +11B00 -11B09; */
+
+  /*url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@5.3.0/latin-400-normal.woff2) format('woff2');
+        url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@5.3.0/latin-400-normal.woff) format('woff'); 
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}*/
+ 
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Style+Script&display=swap'); */
+
+/* @import url('https://cdn.jsdelivr.net/fontsource/fonts/poppins@5.3.0/latin-400-normal.woff2'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ body{
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  font-family: 'barlow';
+ }
+ .header{
+  color: red;
+  text-align: center;
+  font-family: 'Barlow','Barlow Extra Bold';
+  font-size: xxx-large;
+  font-style: 'bold';
+ }
+ .main{
+  display: flex;
+  text-align: center;
+  align-content: center;
+  margin-top: 30px;
+  justify-content: space-evenly;
+ }
+ .img{
+   height: 460px;
+   width: 600px;
+   /* border: solid white; */
+
+   
+ }
+ .gspimg{
+  height: 450px;
+  width: 600px;
+  border: solid 3px;
+ }
+ .about{
+  margin-top: 10px;
+  color: rgb(218, 30, 30);
+  height: 450px;
+  width: 550px;
+  /* border: solid white; */
+  text-align: center;
+ }
+ sub{
+   font-family: "Barlow",'Barlow Light';
+   font-size: x-large;
+ }
+ .social{
+  display: flex;
+  height: 150px;
+  width: 550px;
+  text-align: center;
+  align-content: center;
+  /* border: solid white; */
+  justify-content: center;
+  gap: 1rem;
+ }
+ .insta{
+  height: 140px;
+  width: 160px;
+  /* text-align: center; */
+  padding: 5px;
+  /* border: solid red; */
+  color: white;
+  border-radius: 0.2rem;
+  background-color: rgb(97, 96, 96);
+ }
+ .instaImg{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+ }
+ .num{
+  font-size: x-large;
+ }
+ .youtube{
+  height: 140px;
+  width: 160px;
+  padding: 5px;
+  color: white;
+  /* border: solid red; */
+  border-radius: 0.2rem;
+  background-color: rgb(97, 96, 96);
+
+
+ }
+ .UTubeimg{
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+ }
+ .name{
+      margin-top: 10px;
+      font-size: xx-large;
+      margin-top: 30px;
+      font-family: 'Barlow','Barlow Medium';
+      text-transform: uppercase;
+      font-size: 400;
+      font-weight: 600;
+      font-family: 'Barlow','Barlow Medium';
+      animation: stroke 5s linear forwards;
+      animation-duration: 5s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      animation-fill-mode: forwards;
+      animation-play-state: running;
+      animation-name: stroke;
+      animation-timeline: auto;
+      animation-range-start: normal;
+      animation-range-end: normal;
+      stroke-width: 2;
+      stroke: var(--primary);
+    }
+  .svg-name{
+    margin-top: 20px;
+  }  
+
+@keyframes stroke {
+  0% {
+    stroke: #761233;       /* starting color */
+    stroke-width: -0.5;       /* thin border */
+    fill: transparent ;     /* text hollow */
+   
+  }
+  33% {
+    stroke: #9a2525;       /* mid color */
+    stroke-width: 0.5;       /* thicker border */
+    fill: transparent;
+  }
+  66% {
+    stroke: #360a18;       /* mid color */
+    stroke-width: 1.5;       /* thicker border */
+    fill: #541013;
+  }
+  100% {
+    stroke: #a71c21;       /* final color */
+    stroke-width: 2.5;       /* stable width */
+    fill: #f30408;         /* text filled at end */
+
+  }
+}
+
+ .content{
+  color:rgb(209, 217, 224);
+  font-family: 'Barlow','Barlow Light';
+  font-size: x-large;
+ }
+ .join{
+  display: flex;
+  text-align: center;
+  /* place-content: center; */
+  justify-content: center;
+  width: 400px;
+  margin-top: 5px;
+  /* border: solid white; */
+ }
+ .toJoin{
+  /* border: solid white; */
+  width: 200px; 
+  color: #fff;
+  background-color: red;
+  padding-right: 2px;
+  border-right: solid 3px #fff;
+  border-bottom: solid 3px #fff;
+  font-family: 'Barlow','Barlow Light'; 
+  font-size: 20px;
+ }
+ .toJoin:hover{
+  border-right: none;
+  border-bottom: none; 
+ }
+
+ /*page-2*/
+ .title{
+   color: #fff;
+   text-align: center;
+   font-size: xx-large;
+   font-family: 'Barlow','Barlow Light';
+
+ }
+ .gtag{
+  color: rgb(218, 30, 30);
+  font-family: 'Barlow','Barlow Light';
+  font-weight: 600;
+ }
+ #marqee{
+  direction: left;
+  behavior: alternate;
+ }
+ .videos{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+ }
+ .video1{
+  height: 275px;
+  width: 350px;
+  text-align: center;
+  align-content: end;
+  color: #fff;
+  background-size: cover;
+  /* border: solid white; */
+  font-weight: 400;
+  font-size: larger;
+ }
+
+.insta:hover{
+  /* background-color: rgb(188, 84, 84); */
+  background-color: red;
+  color: black;
+
+ }
+
+.youtube:hover{
+  background-color: red;
+  color: black;
+}
+ /*page 3*/
+.details{
+  display: flex;
+  align-content: center;
+  margin-top: 50px; 
+  justify-content: center;
+  /* border:  solid #fff; */
+}
+
+ .detail{
+  height: 490px;
+  width: 1020px;
+  display: flex;
+  /* margin-top: 50px; */
+  /* border: solid #fff; */
+  border-radius: 0.2rem;
+  background-color: rgb(59, 59, 59);
+  /* align-content: center; */
+  justify-content: space-evenly;
+  
+
+ }
+ .contact1{
+  color: #fff;
+  text-align: center;
+  font-family: 'Barlow', 'Barlow Light';
+  align-content: center;
+  font-size: x-large;
+ }
+ .contact{
+  
+  /* border: solid green; */
+  margin-top: 20px;
+  border-radius: 0.2rem;
+  background-color: rgb(59, 59, 59);
+  text-align: center;
+  align-content: center;
+
+ }
+ .del{
+  size: 40px;
+  height: 30px;
+  width: 380px;
+  color: #fff;
+  gap: 5rem;
+  margin-top: 10px;
+  row-gap: 2rem;
+  border-radius: 0.3rem;
+  /* box-shadow: 0px,0px,0px,5px; */
+  box-sizing: 1px,1px,2px,2px;
+  background-color: rgb(59, 59, 59);
+  font-family: 'Barlow', 'Barlow Light';
+  font-size: x-large;
+
+ }
+
+ .text{
+    size: 40px;
+    height: 90px;
+    width: 380px;
+    color: #fff;
+    margin-top: 10px;
+    font-size: x-large;
+    border-radius: 0.2rem;
+    box-sizing: 1px,1px,2px,2px;
+    /* border-color: rgb(59, 59, 60); */
+    background-color: rgb(59, 59, 59);
+    font-family: 'Barlow', 'Barlow Light';
+
+
+ }
+ .submit{
+  height: 35px;
+  width: 380px;
+  margin-top: 10px;
+  color: white;
+  font-size: x-large;
+  border-radius: 0.2rem;
+  background-color: red;
+  font-family: 'Barlow', 'Barlow Light';
+
+ }
+
+
+ /* page -3 */
+ .incharge{
+  height: 100px;
+  /* width: 200px; */
+  border: solid #fff;
+  margin-top: 5px;
+  text-align: center;
+  }
+
+ 
+ /* .founder{
+  color: red;
+  text-align: center;
+  font-family: cursive;
+  /* font-family: "Style Script", roboto; 
+  font-size: xx-large;
+  animation: slide-up linear 3s; 
+}*/
+
+big{
+  color: red;
+  font-family: 'Barlow','Barlow Light';
+  text-align: center;
+} 
+.askQSn {
+  color: #fff;
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Barlow','Barlow Light';
+
+}
+.content{
+  color: #fff;
+  text-align: center;
+  font-family: 'Barlow','Barlow Light';
+  font-size: x-large;
+
+}
+.link{
+  color: red;
+  text-decoration: none;
+}
+
+.word-roatater{
+  position: relative;
+  color: red;
+  height: 60px;
+  overflow: hidden;
+
+}
+.word-roatater span{
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  font-size: xxx-large;
+  font-family: 'Barlow','Barlow Medium';
+  font-weight: 500;
+  transform: translateY(30px);
+  animation: rotateUp 6s linear infinite;
+
+}
+.word-roatater span:nth-child(1) {
+  animation-delay: 0s;
+}
+.word-roatater span:nth-child(2) {
+  animation-delay: 2s;
+}
+.word-roatater span:nth-child(3) {
+  animation-delay: 4s;
+}
+
+@keyframes  rotateUp {
+  
+  0%{ 
+    opacity: 0;
+    transform: translateY(30px);
+    /* scale: 0.95;  */
+  }
+  10%{
+    opacity: 1; 
+    transform: translateY(0px);
+    /* scale: 1;  */
+  }
+  30%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  40%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+}
+
+ /* page -4 */
+ .footer{
+  height: 150px;
+  margin-top: 5px;
+  border-top: 1px solid;
+  /* color: #fff; */
+  text-align: center;
+  align-content: center;
+  background-color:  rgb(179, 28, 28);
+ }
+ .allicons{
+  display: inline;
+  gap: 2rem;
+  column-gap: 5rem;
+  
+ }
+.icon{
+  color: #fff;
+  height: 8px;
+  width: 8px;
+  /* font-weight: 100; */
+  padding: 5px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #070707;
+  border-radius: 50%;
+  gap: 2rem;
+  background-color: black;
+}
+/* .icons:hover{
+  transform: scale(1.2); 
+
+} */
+#fb, #li, #in, #wp, #em, #You{
+  text-align: center;
+  font-size: 15px;
+}
+#fb:hover{
+  background-color: blue;
+  padding: 20px;
+  font-size: 15px;
+  color: #070707;
+}
+#li:hover{
+  background-color:  rgb(31, 31, 128);
+  padding: 20px;
+  font-size: 15px;
+  color: #070707;
+
+}
+#in:hover{
+  background-color:  rgba(170, 0, 255, 0.837);
+  padding: 20px;
+  font-size: 15px;
+  color: #070707; 
+
+}
+#wp:hover{
+  background-color: green;
+  padding: 20px;
+  font-size: 15px;
+  color: #070707; 
+
+}
+#em:hover{
+  background-color: brown;
+  padding: 20px;
+  font-size: 15px;
+  color: #070707; 
+
+}
+#You:hover{
+  background-color: rgb(175, 2, 2);
+  padding: 20px;
+  font-size: 15px;
+  color: #070707; 
+
+}
+small{
+  color: black;
+  font-size: 20px;
+  font-family: 'Barlow', 'Barlow Light';
+
+}
+
+
+@media (max-width:480px) {
+  body{
+  margin: 0px;
+  padding: 0px;
+  }
+  .header{
+  color: red;
+  text-align: center;
+  font-family: 'Barlow','Barlow Extra Bold';
+  font-size: xx-large;
+  width: 480px;
+  /* border: solid white; */
+  }
+  .main{
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  margin-top: 0px;
+  width: 480px;
+  justify-content: center;
+  /* border: solid white; */
+
+ }
+  .img{
+   height: 390px;
+   width: 400px;
+   /* border: solid white; */
+  }
+  
+ .gspimg{
+  height: 390px;
+  width: 478px;
+  /* border: solid 3px white; */
+ }
+ .about{
+  margin-top: 10px;
+  color: rgb(218, 30, 30);
+  height: 410px;
+  width: 480px;
+  /* border: solid white; */
+  text-align: center;
+  justify-content: center;
+ }
+  sub{
+   font-family: "Barlow",'Barlow Light';
+   font-size: x-large;
+   font-weight: 600;
+ }
+ .social{
+  display: flex;
+  height: 150px;
+  width: 480px;
+  text-align: center;
+  align-content: center;
+  /* border: solid white; */
+  justify-content: center;
+  gap: 1rem;
+ }
+ .insta{
+  height: 120px;
+  width: 140px;
+  /* text-align: center; */
+  padding: 5px;
+  /* border: solid red; */
+  color: white;
+  border-radius: 0.2rem;
+  background-color: rgb(97, 96, 96);
+ }
+ .instaImg{
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+ }
+ .num{
+  font-size: x-large;
+ }
+ .youtube{
+  height: 120px;
+  width: 140px;
+  padding: 5px;
+  color: white;
+  /* border: solid red; */
+  border-radius: 0.2rem;
+  background-color: rgb(97, 96, 96);
+
+
+ }
+ .UTubeimg{
+  margin-top: 10px;
+  height: 30px;
+  width: 30px;
+ }
+ /* page- 2*/
+ .title{
+   color: #fff;
+   text-align: center;
+   font-size: xx-large;
+   font-weight: 900;
+  }
+  #marqee{
+ 
+    direction: alternate !important;
+    behavior: scroll; 
+  }
+  .videos{
+  /* display: inline-block; */
+  justify-content: center;
+  gap: 2rem;
+
+ }
+  .video1{
+  height: 280px;
+  width: 480px;
+  text-align: center;
+  align-content: end;
+  color: #fff;
+  background-size: cover;
+  /* border: solid white; */
+  font-weight: 400;
+  font-size: larger;
+ }
+  /*page 3*/
+.details{
+  display: flex;
+  align-content: center;
+  margin-top: 50px; 
+  justify-content: center;
+  /* border:  solid #fff; */
+}
+ .detail{
+  /* height: 550px; */
+  width: 480px;
+  display: inline-block;
+  /* margin-top: 50px; */
+  /* border: solid #fff; */
+  border-radius: 0.2rem;
+  background-color: rgb(59, 59, 59);
+  /* align-content: center; */
+  justify-content: center;
+  
+
+ }
+ .contact1{
+  color: #fff;
+  text-align: center;
+  font-family: 'Barlow', 'Barlow Light';
+  align-content: center;
+  font-size: x-large;
+  font-weight: 500;
+ }
+  .contact{
+  
+  /* border: solid green; */
+  margin-top: 20px;
+  border-radius: 0.2rem;
+  background-color: rgb(59, 59, 59);
+  text-align: center;
+  align-content: center;
+
+ }
+ 
+ 
+ .del{
+  size: 40px;
+  height: 30px;
+  width: 310px;
+  color: #fff;
+  gap: 5rem;
+  margin-top: 10px;
+  row-gap: 2rem;
+
+
+ }
+
+ .text{
+    size: 40px;
+    height: 60px;
+    width: 310px;
+    color: #fff;
+    margin-top: 10px;
+ }
+ .submit{
+  height: 33px;
+  width: 315px;
+  margin-top: 10px;
+  font-weight: 500;
+
+ }
+  /* page -4 */
+ .footer{
+  height: 100px;
+  margin-top: 5px;
+  border-top: 1px solid;
+ 
+ }
+ .icon{
+  color: #fff;
+  height: 9px;
+  width: 9px;
+}
+#fb, #li, #in, #wp, #em, #You{
+  text-align: center;
+  font-size: 20px;
+}
+small{
+  font-size: large;
+}
+}
+

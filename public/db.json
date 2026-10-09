@@ -1,0 +1,163 @@
+{
+  "userdetails": [
+    {
+      "name": "ramu",
+      "email": "nikram@123gmail.com",
+      "city": "Hyderabad",
+      "cell": "9640211426",
+      "textmsg": "hello World!",
+      "id": "41jIqmEJEvk"
+    },
+    {
+      "name": "ramu",
+      "email": "nikram@123gmail.com",
+      "city": "Hyderabad",
+      "cell": "9640211426",
+      "textmsg": "hello World!",
+      "id": "YEM5vnUhAiw"
+    },
+    {
+      "name": "nikhil",
+      "email": "nk@12gmail.com",
+      "city": "Hyd",
+      "cell": "8185013411",
+      "textmsg": "hello!❤️",
+      "id": "ToQ_5CDH_po"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "NIK@456GMAIL.COM",
+      "city": "Delhi",
+      "cell": "152333333333",
+      "textmsg": "AWFDEFA",
+      "id": "eHuaHgzRL58"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "NIK@456GMAIL.COM",
+      "city": "Delhi",
+      "cell": "152333333333",
+      "textmsg": "AWFDEFA",
+      "id": "x3WDQcfIUec"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "nikhilkarne96kg@gmail.com",
+      "city": "Delhi",
+      "cell": "8527419336",
+      "textmsg": "NIKHIL ",
+      "id": "FCZWVFrcQYA"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "NIKHIL96kg@gmail.com",
+      "city": "Delhi",
+      "cell": "8527419336",
+      "textmsg": "NIKHIL ",
+      "id": "UV713OX0VeY"
+    },
+    {
+      "name": "NIKE",
+      "email": "nikhilkarn@gmail.clm",
+      "city": "HYDERABAD",
+      "cell": "78945612300",
+      "textmsg": "HELLO JACK 😎",
+      "id": "hjvL846BF-M"
+    },
+    {
+      "name": "RAJU",
+      "email": "raju@34gmail.com",
+      "city": "21",
+      "cell": "9645811214",
+      "textmsg": "I BELIEF A NEW THING TO LIVE OUR NATION AND I HAVE A BIG DREAM..😊",
+      "id": "YGAFyrGFuAs"
+    },
+    {
+      "name": "NDA",
+      "email": "djnc@dmkvma",
+      "city": "bheemgal",
+      "cell": "544325",
+      "textmsg": "DVSVD",
+      "id": "VH2b5LZm5JA"
+    },
+    {
+      "name": "RAJ",
+      "email": "raj!@f",
+      "city": "HYDERABAD",
+      "cell": "78945869321",
+      "textmsg": "IKEA",
+      "id": "amwoZP63h1g"
+    },
+    {
+      "name": "RAJ",
+      "email": "raj!@f",
+      "city": "HYDERABAD",
+      "cell": "78945869321",
+      "textmsg": "IKEA.",
+      "id": "dBmROv1ZaFU"
+    },
+    {
+      "name": "niKILOOOO",
+      "email": "nikhilkr@ddgmail.com",
+      "city": "DELHI",
+      "cell": "45789625",
+      "textmsg": "I WANT TO TELL SOMTHING SECERAT",
+      "id": "r8Epuk1StHA"
+    },
+    {
+      "name": "niKILOOOO",
+      "email": "nikhilkr@ddgmail.com",
+      "city": "DELHI",
+      "cell": "45789625",
+      "textmsg": "I WANT TO TELL SOMTHING SECERAT",
+      "id": "qNfqsVkIzQw"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "nikh2@gmail.com",
+      "city": "hjh",
+      "cell": "3452",
+      "textmsg": "fdaf",
+      "id": "cRtJ99dlnyQ"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "nikhkg@gmail.com",
+      "city": "Delhi",
+      "cell": "465",
+      "textmsg": "nm ",
+      "id": "FN4pQuq8LdE"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "nikhilk78@gmail.com",
+      "city": "HYDERABAD",
+      "cell": "4512367800",
+      "textmsg": "MNJK",
+      "id": "4lATHhyFfxg"
+    },
+    {
+      "name": "nikhil karne",
+      "email": "nikhilk78@gmail.com",
+      "city": "HYDERABAD ,TELANGANA",
+      "cell": "4512367800",
+      "textmsg": "MN85",
+      "id": "aaLJdvtEAwk"
+    },
+    {
+      "name": " RAMMOHAN",
+      "email": "ram@pvgmail.com",
+      "city": "HYDERABAD",
+      "cell": "788563009524",
+      "textmsg": "TO PROMOTE MY BUSSINESS",
+      "id": "nXtefCFSOIo"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
+
+
+
+
+
+
